@@ -134,10 +134,12 @@ h1 {
   color: inherit;
   font-size: 5rem;
   padding: 1rem;
+
   width: 13rem;
   height: 12rem;
   text-align: center;
-  display: block;
+  /* display: block; */
+ 
   margin-bottom: 3rem;
    
 }
@@ -154,7 +156,7 @@ h1 {
   color: #fff;
   font-size: 2rem;
   font-family: inherit;
-  padding: 2rem 3rem;
+  padding: 1.5rem 3rem;
   transition: all 0.3s;
   cursor: pointer;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
