@@ -41,17 +41,58 @@ body{
  
 }
 
+
+@media screen and (max-width: 600px) {
+    .container{
+      /* margin: 2rem 4rem 0 4rem; */
+      /* height: 120%; */
+      transform: scale(0.8);
+       
+      position: relative;
+      top: 0;
+      left: 0;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+      /* margin: 2rem 4rem 0 4rem; */
+      /* height: 120%; */
+      transform: scale(0.9);
+       height: 120%;
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-top: 8rem;
+
+    }
+}
+
+
+
 header{
     position: relative;
     height: 35vh;
     border-bottom: 3px solid #333;
 }
 
+@media screen and (max-width: 600px) {
+    header{
+     height: 50vh;
+    }
+}
 main{
     height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+      margin-top: 8rem;
+    }
 }
 
 .left {
@@ -163,6 +204,12 @@ h1 {
   font-weight: 600;
 }
 
+
+@media screen and (max-width: 600px) {
+    .btn{
+     padding: 1rem 2rem;
+    }
+}
 .btn:hover {
   background-color: #333;
 }
