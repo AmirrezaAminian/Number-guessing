@@ -1,5 +1,6 @@
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+const secretNumber = Math.trunc(Math.random() * 100) + 1;
 
+document.querySelector(".number").textContent = secretNumber;
 let score = 20;
 
 console.log(secretNumber);
@@ -28,7 +29,6 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".number").style.height = "13rem";
     document.querySelector(".container").style.backgroundColor = "#60b347";
 
-
     document.querySelector(".number").textContent = secretNumber;
   } else if (guess > secretNumber) {
     if (score > 1) {
@@ -49,6 +49,18 @@ document.querySelector(".check").addEventListener("click", function () {
     } else {
       document.querySelector(".message").textContent = "💥  You lost the game!";
       document.querySelector(".score").textContent = 0;
+      document.querySelector("body").style.backgroundColor = "#e03d3d";
+      document.querySelector(".container").style.backgroundColor = "#e03d3d";
+      document.querySelector("body").style.color = "#444";
+      document.querySelector(".btn").style.color = "#444";
+      document.querySelector(".check").style.color = "#444";
+      document.querySelector(".number").style.color = "#444";
+      document.querySelector(".guess").style.backgroundColor = "#fff";
+      document.querySelector(".check").style.backgroundColor = "#fff";
+      document.querySelector(".again").style.backgroundColor = "#fff";
+      document.querySelector(".number").style.background = "#fff";
+
+
     }
 
     // when guess is too low
